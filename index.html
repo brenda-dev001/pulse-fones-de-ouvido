@@ -30,24 +30,29 @@
     <main>
         <aside class="carrinho">
             <h2>Seu carrinho</h2>
-            <div class="carrinho__card-produto">
-                <div class="carrinho__imagem-produto">
-                    <img src="#" alt="">
-                </div>
-                <div class="carrinho__detalhes-produto">
-                    <p>Fone gamer Lynx</p>
-                    <span>Preto</span>
-                    <div class="carrinho__quantidade-produto">
-
+            <article class="carrinho__card-produto">
+                <div class="carrinho__container-detalhes">
+                    <div>
+                        <img src="/src/assets/images/png_fone--preto.png" alt="imagem do fone de ouvido">
+                    </div>
+                    <div>
+                        <p>Fone gamer Lynx</p>
+                        <span>Preto</span>
+                        <div class="carrinho__quantidade-produto">
+                            <button><i class="bi bi-dash"></i></button>
+                            <div class="carrinho__contador"><p>1</p></div>
+                            <button><i class="bi bi-plus"></i></button>
+                        </div>
                     </div>
                 </div>
                 <div class="carrinho__preco-produto">
+                    <i class="bi bi-x-circle"></i>
                     <strong>R$ 300,00</strong>
                 </div>
-            </div>
+            </article>
             <div class="carrinho__cupom">
-                <p>Adicionar cupom</p>
-                <input type="submit" placeholder="Código do cupom">
+                <label for="cupom">Adicionar cupom</label>
+                <input type="text" id="cupom" name="cupom" placeholder="Código do cupom">
                 <button type="submit">Aplicar desconto</button>
             </div>
             <div class="carrinho__resumo-compra">
